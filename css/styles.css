@@ -1,4 +1,71 @@
-/* *{
+:root {
+  --text-color: #434455;
+  --accent-color: #4d5ae5;
+  --accent-dark-color: #2e2f42;
+}
 
-  background-color: brown;  !   
-} */
+body {
+  background-color: #f5f5f5;
+  color: var(--text-color);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2,
+h3 {
+  color: var(--accent-dark-color);
+}
+
+.list {
+}
+
+/* ______heder______ */
+.logo {
+  color: var(--accent-dark-color);
+}
+
+.logo-blu {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+
+.site-adress .link:focus,
+.site-adress .link:hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--accent-dark-color);
+}
+
+.site-adress a {
+  color: #434455;
+}
+
+/* ______ Hero_____ */
+
+.hero {
+  background-color: var(--accent-dark-color);
+}
+
+.button-hero {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: #ffffff;
+  color: var(--accent-color);
+}
