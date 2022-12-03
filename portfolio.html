@@ -4,52 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 1</title>
+    <title>Homework 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="">WEBSTUDIO</a>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+      <nav class="heder">
+        <a href="./index.html" class="logo"
+          ><p><span class="logo-blu">WEB</span>STUDIO</p></a
+        >
+        <ul class="site-nav">
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="site-adress">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
         </li>
       </ul>
     </header>
     <main>
-      <section>
+      <section class="galery">
         <h1>Galery</h1>
-        <ul>
+        <ul class="filters">
           <li>
-            <button type="button">All</button>
+            <button type="button" class="button button-filters">All</button>
           </li>
           <li>
-            <button type="button">Web Site</button>
+            <button type="button" class="button button-filters">Web Site</button>
           </li>
           <li>
-            <button type="button">App</button>
+            <button type="button" class="button button-filters">App</button>
           </li>
           <li>
-            <button type="button">Design</button>
+            <button type="button" class="button button-filters">Design</button>
           </li>
           <li>
-            <button type="button">Marketing</button>
+            <button type="button" class="button button-filters">Marketing</button>
           </li>
         </ul>
-        <ul>
+        <ul class="project">
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/banking-app.jpg"
                 alt="User Friendly App Design Concepts"
@@ -57,11 +65,11 @@
                 height="300"
               />
               <h2>Banking App Interface Concept</h2>
-              <p>App</p>
+              <p class="">App</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/cashless-payment.jpg"
                 alt="Cashless payment"
@@ -73,7 +81,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/meditation-app.jpg"
                 alt="laptop with phone"
@@ -85,14 +93,14 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img src="./images/taxi-service.jpg" alt="taxi driver" width="360" height="300" />
               <h2>Taxi Service</h2>
               <p>Marketing</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/screen-illustrations.jpg"
                 alt="screen illustrations on the phone"
@@ -104,7 +112,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/online-courses.jpg"
                 alt="the girl is studying"
@@ -116,7 +124,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/instagram-stories.jpg"
                 alt="picture for instagram stories"
@@ -128,7 +136,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/organic-food.jpg"
                 alt="fresh organic food"
@@ -140,7 +148,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="text-progect">
               <img
                 src="./images/fresh-coffee.jpg"
                 alt="the cup of coffee"
@@ -154,9 +162,11 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">WEBSTUDIO</a>
-      <p>
+    <footer class="footer">
+      <a href="./index.html" class="logo logo-white"
+        ><p><span class="logo-blu">WEB</span>STUDIO</p>
+      </a>
+      <p class="text">
         ncrease the flow of customers and sales for your business with digital marketing & growth
         solutions.
       </p>

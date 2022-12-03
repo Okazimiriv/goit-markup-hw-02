@@ -1,33 +1,52 @@
 :root {
   --text-color: #434455;
   --accent-color: #4d5ae5;
-  --accent-dark-color: #2e2f42;
+  --dark-bg-color: #2e2f42;
+  --light-bg-color: #f4f4fd;
 }
 
 body {
   background-color: #f5f5f5;
   color: var(--text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: SemiBold;
+  letter-spacing: 0.02em;
 }
 
-h1 {
+.hero h1 {
   color: #ffffff;
+  /* Typography Title/Heder 1 */
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
 }
 
 h2,
 h3 {
-  color: var(--accent-dark-color);
-}
-
-.list {
+  color: var(--dark-bg-color);
 }
 
 /* ______heder______ */
 .logo {
-  color: var(--accent-dark-color);
+  color: var(--dark-bg-color);
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .logo-blu {
   color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+  /* Typography Link Text */
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 ul {
@@ -44,8 +63,9 @@ ul {
   color: var(--accent-color);
 }
 
-.site-nav .link {
-  color: var(--accent-dark-color);
+.site-nav .link,
+.site-adress .link {
+  color: var(--dark-bg-color);
 }
 
 .site-adress a {
@@ -55,17 +75,124 @@ ul {
 /* ______ Hero_____ */
 
 .hero {
-  background-color: var(--accent-dark-color);
+  background-color: var(--dark-bg-color);
 }
 
 .button-hero {
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
+  border: none;
+  /* Typography button Text */
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: 0.04em;
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background-color: #ffffff;
   color: var(--accent-color);
+}
+
+/* ____advantages_____ */
+
+.not-visible {
+  font-size: 0px;
+}
+
+.title {
+  /* Typography Heder 3 */
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.advantages p,
+.team p,
+.text-progect p {
+  /* Typography body */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ____team_____ */
+
+.team {
+  background-color: var(--light-bg-color);
+}
+
+/* _____works_____ */
+
+.works h2,
+.team h2 {
+  /* Typography heder 2 */
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+/* _____team_____ */
+
+.team .name {
+  /* Typography heder 3 */
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* _____filters_____ */
+
+.galery h1 {
+  font-size: 0;
+}
+
+.filters .button {
+  background-color: var(--light-bg-color);
+  color: var(--accent-color);
+  border-width: 1px;
+  border-color: #e7e9fc;
+
+  /* Button Text */
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.button-filters:hover,
+.button-filters:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* _____project_____ */
+
+.text-progect {
+  text-decoration: none;
+}
+
+.text-progect h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* ______footer_____ */
+
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.logo-white {
+  color: var(--light-bg-color);
+}
+
+.footer .text {
+  color: #e7e9fc;
+
+  /* Typography body */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
 }
