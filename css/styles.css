@@ -1,36 +1,23 @@
 :root {
-  --text-color: #434455;
+  --body-text-color: #434455;
   --accent-color: #4d5ae5;
   --dark-bg-color: #2e2f42;
   --light-bg-color: #f4f4fd;
+  --basik-white-color: #ffffff;
 }
 
 body {
-  background-color: #f5f5f5;
-  color: var(--text-color);
+  background-color: var(--basik-white-color);
+  color: var(--body-text-color);
 
   font-family: Roboto, sans-serif;
-  font-size: SemiBold;
+  font-weight: 600;
   letter-spacing: 0.02em;
-}
-
-.hero h1 {
-  color: #ffffff;
-  /* Typography Title/Heder 1 */
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-}
-
-h2,
-h3 {
-  color: var(--dark-bg-color);
 }
 
 /* ______heder______ */
 .logo {
   color: var(--dark-bg-color);
-  text-decoration: none;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -42,8 +29,11 @@ h3 {
   color: var(--accent-color);
 }
 
-.link {
+.decore-link {
   text-decoration: none;
+}
+
+.link {
   /* Typography Link Text */
   font-size: 16px;
   line-height: 1.5;
@@ -55,6 +45,10 @@ ul {
 
 .site-nav .link:focus,
 .site-nav .link:hover {
+  color: var(--body-text-color);
+}
+
+.site-nav .link:active {
   color: var(--accent-color);
 }
 
@@ -78,13 +72,22 @@ ul {
   background-color: var(--dark-bg-color);
 }
 
+.hero-title {
+  color: var(--basik-white-color);
+  /* Typography Title/Heder 1 */
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
 .button-hero {
   cursor: pointer;
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--basik-white-color);
   border: none;
   /* Typography button Text */
   font-family: inherit;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.12;
   letter-spacing: 0.04em;
@@ -92,8 +95,13 @@ ul {
 
 .button-hero:hover,
 .button-hero:focus {
-  background-color: #ffffff;
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--basik-white-color);
+}
+
+.button-hero:active {
+  background-color: #404bbf;
+  color: var(--basik-white-color);
 }
 
 /* ____advantages_____ */
@@ -108,13 +116,18 @@ ul {
   line-height: 1.2;
 }
 
-.advantages p,
-.team p,
-.text-progect p {
+.advantages h3,
+.team h3 {
+  color: var(--dark-bg-color);
+}
+
+.advantages-text,
+.team-text,
+.project-text {
   /* Typography body */
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--body-text-color);
 }
 
 /* ____team_____ */
@@ -125,12 +138,13 @@ ul {
 
 /* _____works_____ */
 
-.works h2,
-.team h2 {
+.works-title,
+.team-title {
   /* Typography heder 2 */
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  color: var(--dark-bg-color);
 }
 
 /* _____team_____ */
@@ -143,39 +157,42 @@ ul {
 
 /* _____filters_____ */
 
-.galery h1 {
-  font-size: 0;
-}
-
-.filters .button {
+.button-filters {
   background-color: var(--light-bg-color);
   color: var(--accent-color);
   border-width: 1px;
   border-color: #e7e9fc;
+  cursor: pointer;
 
   /* Button Text */
   font-family: inherit;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
 .button-filters:hover,
-.button-filters:hover {
-  cursor: pointer;
+.button-filters:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--basik-white-color);
+}
+
+.button-filters:active {
+  background-color: var(--accent-color);
+  color: var(--basik-white-color);
 }
 
 /* _____project_____ */
 
-.text-progect {
-  text-decoration: none;
-}
-
-.text-progect h2 {
+.project-title {
   font-size: 20px;
   line-height: 1.2;
+  color: var(--dark-bg-color);
+}
+
+.project-text {
+  color: var(--body-text-color);
 }
 
 /* ______footer_____ */
